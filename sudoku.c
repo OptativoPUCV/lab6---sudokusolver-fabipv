@@ -46,6 +46,7 @@ void print_node(Node* n){
 int is_valid(Node* n){
   int i;
   int j;
+  
   //No se repitan numeros en las filas
   for(i = 0; i < 9; i++)
   {
@@ -54,7 +55,16 @@ int is_valid(Node* n){
       
     }
   }
+  
   //No se repitan numeros en las columnas
+  for(i = 0; i < 9; i++)
+  {
+    for(j = 0; j < 9; j++)
+    {
+      
+    }
+  }
+  
   //No se repitan en las submatrices de 3x3
   
 
