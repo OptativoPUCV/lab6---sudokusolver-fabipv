@@ -44,6 +44,13 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
+  int i;
+  int j;
+  //No se repitan numeros en las filas
+  
+  //No se repitan numeros en las columnas
+  //No se repitan en las submatrices de 3x3
+  
 
     return 1;
 }
