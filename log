@@ -64,3 +64,9 @@ sudoku.c:66:19: error: variable ‘nuevoNodo’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 6445278
+Thu 04 May 2023 04:33:06 PM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  0|5
+total_score: 0/70
+3013e95
