@@ -42,3 +42,14 @@ Thu 04 May 2023 01:28:25 PM UTC:
  tests:  0|5
 total_score: 0/70
 aafdef1
+Thu 04 May 2023 04:31:31 PM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:66:19: error: unused variable ‘nuevoNodo’ [-Werror=unused-variable]
+   66 |             Node *nuevoNodo = createNode();
+      |                   ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b08d8fe

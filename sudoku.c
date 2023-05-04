@@ -63,6 +63,7 @@ List* get_adj_nodes(Node* n){
         {
           for(k = 0 ; k < 9 ; k++)
           {
+            Node *nuevoNodo = createNode();
             
           }
         }
