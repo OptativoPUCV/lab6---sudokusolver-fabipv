@@ -80,6 +80,10 @@ int is_valid(Node* n){
   {
     for(i = 0; i < 9; i++)
     {
+      if(n->sudo[i][j] != 0)
+      {
+        
+      }
       
     }
   }
