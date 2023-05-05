@@ -163,7 +163,7 @@ List* get_adj_nodes(Node* n){
             }
             else
             {
-              popBack(nuevoNodo);
+              free(nuevoNodo);
             }
           }
         }
