@@ -349,3 +349,14 @@ Fri 05 May 2023 03:43:08 AM UTC:
  tests:  5|3
 total_score: 35/70
 51e3870
+Fri 05 May 2023 03:43:57 AM UTC: 
+ sudoku.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:111:29: error: ‘s’ may be used uninitialized [-Werror=maybe-uninitialized]
+  111 |       int x = (k/3) * 3 + (s/3);
+      |                           ~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+61c6a5c

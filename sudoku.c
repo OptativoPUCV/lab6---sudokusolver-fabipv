@@ -119,6 +119,10 @@ int is_valid(Node* n){
         {
           arraysNum[numActual] = 1;
         }
+        else
+        {
+          return 0;
+        }
       }
       
     }
