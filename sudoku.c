@@ -68,7 +68,10 @@ int is_valid(Node* n){
         
       }
     }
-
+    for(k = 1; k <= 9; k++)
+    {
+      arraysNum[k] == 0;
+    }
   }
   
   //No se repitan numeros en las columnas
