@@ -576,3 +576,14 @@ sudoku.c:222:11: error: unused variable ‘listaNodos’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 3623c83
+Fri 05 May 2023 01:01:32 PM UTC: 
+ sudoku.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:225:11: error: unused variable ‘primero’ [-Werror=unused-variable]
+  225 |     Node *primero = first(listaNodos);
+      |           ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a31a8e0

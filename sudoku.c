@@ -218,8 +218,11 @@ Node* DFS(Node* initial, int* cont){
     }
     
     //c) Obtenga la lista de nodos adyacentes al nodo.
-
     List *listaNodos = get_adj_nodes(encontrado);
+
+    
+    //d) Agregue los nodos de la lista (uno por uno) al stack S.
+    Node *primero = first(listaNodos);
     
     
   }
@@ -228,7 +231,7 @@ Node* DFS(Node* initial, int* cont){
 
     
 
-    //d) Agregue los nodos de la lista (uno por uno) al stack S.
+    
 
     //e) Libere la memoria usada por el nodo.
 
