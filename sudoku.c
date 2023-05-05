@@ -157,16 +157,13 @@ List* get_adj_nodes(Node* n){
             nuevoNodo = copy(n);
             nuevoNodo->sudo[i][j] = k;
 
-            if(is_valid(nuevoNodo))
+            if(is_valid(nuevoNodo) == 1)
             {
               pushBack(list, nuevoNodo);
             }
-            else
-            {
-              free(nuevoNodo);
-            }
+            
           }
-          break;
+         
         }
       }
     }
