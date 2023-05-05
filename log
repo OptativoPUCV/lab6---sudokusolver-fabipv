@@ -405,3 +405,19 @@ Fri 05 May 2023 03:48:47 AM UTC:
  tests:  5|3
 total_score: 35/70
 b7b5128
+Fri 05 May 2023 03:53:44 AM UTC: 
+ sudoku.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:160:35: error: expected ‘)’ before ‘{’ token
+  160 |             if(is_valid(nuevoNodo)
+      |               ~                   ^
+      |                                   )
+  161 |             {
+      |             ~                      
+sudoku.c:164:11: error: expected expression before ‘}’ token
+  164 |           }
+      |           ^
+Compilation failed
+dd91fe7
