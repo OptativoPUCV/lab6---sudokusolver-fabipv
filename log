@@ -211,3 +211,23 @@ sudoku.c:73:20: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 fae98a6
+Fri 05 May 2023 01:48:51 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘is_valid’:
+sudoku.c:73:20: error: iteration 8 invokes undefined behavior [-Werror=aggressive-loop-optimizations]
+   73 |       arraysNum[k] = 0;
+      |       ~~~~~~~~~~~~~^~~
+sudoku.c:71:18: note: within this loop
+   71 |     for(k = 1; k <= 9; k++)
+      |                ~~^~~~
+sudoku.c:73:20: error: ‘__builtin_memset’ forming offset [36, 39] is out of the bounds [0, 36] of object ‘arraysNum’ with type ‘int[9]’ [-Werror=array-bounds]
+   73 |       arraysNum[k] = 0;
+      |       ~~~~~~~~~~~~~^~~
+sudoku.c:51:7: note: ‘arraysNum’ declared here
+   51 |   int arraysNum[9] = {0};
+      |       ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d5e5689
