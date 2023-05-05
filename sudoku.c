@@ -159,10 +159,14 @@ List* get_adj_nodes(Node* n){
 
             if(is_valid(nuevoNodo))
             {
-              pushBack(list, nuevoNodo); 
+              pushBack(list, nuevoNodo);
             }
-            
+            else
+            {
+              free(nuevoNodo);
+            }
           }
+          break;
         }
       }
     }
