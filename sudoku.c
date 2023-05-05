@@ -63,7 +63,7 @@ int is_valid(Node* n){
         }
         else
         {
-          arraysNums[n->sudo[i][j]] = 1;
+          arraysNum[n->sudo[i][j]] = 1;
         }
         
       }
