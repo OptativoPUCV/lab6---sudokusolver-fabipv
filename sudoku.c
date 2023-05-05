@@ -208,14 +208,18 @@ Node* DFS(Node* initial, int* cont){
   while(is_empty(s) == 0)
   {
     //a) Saque y elimine el primer nodo de S.
-
     Node *encontrado = top(s);
     pop(s);
+
+    //b) Verifique si corresponde a un estado final, si es así retorne el nodo.
+    if(is_final(encontrado))
+    {
+      return encontrado;
+    }
+    
   }
 
     
-
-    //b) Verifique si corresponde a un estado final, si es así retorne el nodo.
 
     //c) Obtenga la lista de nodos adyacentes al nodo.
 

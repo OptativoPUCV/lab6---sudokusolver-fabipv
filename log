@@ -559,3 +559,9 @@ sudoku.c:212:11: error: unused variable ‘encontrado’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 2731d38
+Fri 05 May 2023 12:56:39 PM UTC: 
+ sudoku.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+ tests:  7|1
+total_score: 55/70
+0ee3f18
