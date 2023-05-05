@@ -139,3 +139,19 @@ Fri 05 May 2023 01:33:02 AM UTC:
  tests:  2|4
 total_score: 15/70
 befdb40
+Fri 05 May 2023 01:42:11 AM UTC: 
+ sudoku.c | 14 +++++++++++---
+ 1 file changed, 11 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:66:11: error: ‘arrayNums’ undeclared (first use in this function); did you mean ‘arraysNum’?
+   66 |           arrayNums[n->sudo[i][j]] = 1;
+      |           ^~~~~~~~~
+      |           arraysNum
+sudoku.c:66:11: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:49:7: error: unused variable ‘k’ [-Werror=unused-variable]
+   49 |   int k;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+3d6b897
