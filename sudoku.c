@@ -108,22 +108,28 @@ int is_valid(Node* n){
       int  k = 3 * (i/3) + (j/3);
       int s;
 
-      int x = (k/3) * 3 + (s/3);
-      int y = (k%3) * 3 + (s%3);
-
-      int numActual = n->sudo[x][y];
-
-      if(numActual != 0)
+      for(s = 0 ; p < 9 ; p++)
       {
-        if(arraysNum[numActual] == 0)
+        int x = (k/3) * 3 + (s/3);
+        int y = (k%3) * 3 + (s%3);
+
+        int numActual = n->sudo[x][y];
+
+        if(numActual != 0)
         {
-          arraysNum[numActual] = 1;
+          if(arraysNum[numActual] == 0)
+          {
+            arraysNum[numActual] = 1;
+          }
+          else
+          {
+            return 0;
+          }
         }
-        else
-        {
-          return 0;
-        }
+  
       }
+
+    
       
     }
   }
