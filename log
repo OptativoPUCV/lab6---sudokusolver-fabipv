@@ -504,3 +504,14 @@ Fri 05 May 2023 12:34:43 PM UTC:
  tests:  7|1
 total_score: 55/70
 6e751ee
+Fri 05 May 2023 12:38:46 PM UTC: 
+ sudoku.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:200:10: error: unused variable ‘pila’ [-Werror=unused-variable]
+  200 |   Stack *pila = createStack();
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0a37d9a
