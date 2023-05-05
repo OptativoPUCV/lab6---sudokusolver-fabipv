@@ -205,12 +205,15 @@ Node* DFS(Node* initial, int* cont){
 
   //Mientras el stack S no se encuentre vacío:
 
-  /*while(s != NULL)
+  while(is_empty(s) == 0)
   {
-    
-  }*/
-
     //a) Saque y elimine el primer nodo de S.
+
+    Node *encontrado = top(s);
+    pop(s);
+  }
+
+    
 
     //b) Verifique si corresponde a un estado final, si es así retorne el nodo.
 
