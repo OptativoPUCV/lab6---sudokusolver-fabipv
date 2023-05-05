@@ -112,6 +112,11 @@ int is_valid(Node* n){
       int y = (k%3) * 3 + (s%3);
 
       int numActual = n->sudo[x][y];
+
+      if(numActual != 0)
+      {
+        
+      }
       
     }
   }
