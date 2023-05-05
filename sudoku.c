@@ -91,7 +91,11 @@ int is_valid(Node* n){
           arraysNum[n->sudo[i][j]] = 1;
         }
       }
-      
+    }
+
+    for(k = 1 ; k <= 9 ; k++)
+    {
+      arraysNum[k] = 0;
     }
   }
   
