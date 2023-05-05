@@ -82,7 +82,14 @@ int is_valid(Node* n){
     {
       if(n->sudo[i][j] != 0)
       {
-        
+        if(arraysNum[n->sudo[i][j]] == 1)
+        {
+          return 0;
+        }
+        else
+        {
+          arraysNum[n->sudo[i][j]] == 1;
+        }
       }
       
     }

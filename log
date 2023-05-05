@@ -255,3 +255,14 @@ Fri 05 May 2023 03:20:33 AM UTC:
  tests:  5|3
 total_score: 35/70
 bbe6c06
+Fri 05 May 2023 03:26:21 AM UTC: 
+ sudoku.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:91:36: error: statement with no effect [-Werror=unused-value]
+   91 |           arraysNum[n->sudo[i][j]] == 1;
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+08d41b6
