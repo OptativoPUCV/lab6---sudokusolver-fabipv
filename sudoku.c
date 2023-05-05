@@ -163,10 +163,9 @@ List* get_adj_nodes(Node* n){
             }
             else
             {
-              free(nuevoNodo);
+              popBack(nuevoNodo);
             }
           }
-          break;
         }
       }
     }
