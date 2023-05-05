@@ -105,6 +105,13 @@ int is_valid(Node* n){
   {
     for(j = 1 ; j < 9 ; j+= 3)
     {
+      int  k = 3 * (i/3) + (j/3);
+      int s;
+
+      int x = (k/3) * 3 + (s/3);
+      int y = (k%3) * 3 + (s%3);
+
+      int numActual = n->sudo[x][y];
       
     }
   }

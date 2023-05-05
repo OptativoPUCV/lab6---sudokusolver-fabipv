@@ -284,3 +284,14 @@ Fri 05 May 2023 03:35:07 AM UTC:
  tests:  5|3
 total_score: 35/70
 9087ae5
+Fri 05 May 2023 03:40:03 AM UTC: 
+ sudoku.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:114:11: error: unused variable ‘numActual’ [-Werror=unused-variable]
+  114 |       int numActual = n->sudo[x][y];
+      |           ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+03396c7
