@@ -217,11 +217,16 @@ Node* DFS(Node* initial, int* cont){
       return encontrado;
     }
     
+    //c) Obtenga la lista de nodos adyacentes al nodo.
+
+    List *listaNodos = get_adj_nodes(encontrado);
+    
+    
   }
 
     
 
-    //c) Obtenga la lista de nodos adyacentes al nodo.
+    
 
     //d) Agregue los nodos de la lista (uno por uno) al stack S.
 

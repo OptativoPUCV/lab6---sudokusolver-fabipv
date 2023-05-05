@@ -565,3 +565,14 @@ Fri 05 May 2023 12:56:39 PM UTC:
  tests:  7|1
 total_score: 55/70
 0ee3f18
+Fri 05 May 2023 12:58:50 PM UTC: 
+ sudoku.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:222:11: error: unused variable ‘listaNodos’ [-Werror=unused-variable]
+  222 |     List *listaNodos = get_adj_nodes(encontrado);
+      |           ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3623c83
