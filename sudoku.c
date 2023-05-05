@@ -117,7 +117,7 @@ int is_valid(Node* n){
       {
         if(arraysNum[numActual] == 0)
         {
-          arraysNum[numActual] == 1;
+          arraysNum[numActual] = 1;
         }
       }
       
