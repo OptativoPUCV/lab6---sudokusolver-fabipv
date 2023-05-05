@@ -144,6 +144,7 @@ List* get_adj_nodes(Node* n){
     int i;
     int j;
     int k;
+    int numEncontrado = 0;
 
     for(i = 0 ; i < 9 ; i++)
     {
@@ -151,6 +152,7 @@ List* get_adj_nodes(Node* n){
       {
         if(n->sudo[i][j] == 0)
         {
+          numEncontrado = 1;
           for(k = 1 ; k <= 9 ; k++)
           {
             Node *nuevoNodo = createNode();
@@ -161,10 +163,18 @@ List* get_adj_nodes(Node* n){
             {
               pushBack(list, nuevoNodo);
             }
-            
+            else
+            {
+              free(nuevoNodo);
+            }
           }
-         
+          break;
         }
+      }
+
+      if(numEncontrado)
+      {
+        break;
       }
     }
   return list;
