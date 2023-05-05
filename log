@@ -309,3 +309,14 @@ sudoku.c:111:11: error: unused variable ‘x’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 1382dde
+Fri 05 May 2023 03:40:20 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:114:11: error: unused variable ‘numActual’ [-Werror=unused-variable]
+  114 |       int numActual = n->sudo[x][y];
+      |           ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4466324

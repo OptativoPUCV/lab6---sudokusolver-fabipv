@@ -111,7 +111,7 @@ int is_valid(Node* n){
       int x = (k/3) * 3 + (s/3);
       int y = (k%3) * 3 + (s%3);
 
-      //int numActual = n->sudo[x][y];
+      int numActual = n->sudo[x][y];
       
     }
   }
