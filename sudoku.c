@@ -197,7 +197,8 @@ int is_final(Node* n){
 
 Node* DFS(Node* initial, int* cont){
 
-  Stack pila = createStack();
+  Stack *s = createStack();
+  push(s, initial);
   
   return NULL;
 }
