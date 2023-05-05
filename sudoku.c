@@ -197,8 +197,23 @@ int is_final(Node* n){
 
 Node* DFS(Node* initial, int* cont){
 
+  //Cree un stack S (pila) e inserte el nodo
   Stack *s = createStack();
   push(s, initial);
+
+  //Mientras el stack S no se encuentre vacío:
+
+    //a) Saque y elimine el primer nodo de S.
+
+    //b) Verifique si corresponde a un estado final, si es así retorne el nodo.
+
+    //c) Obtenga la lista de nodos adyacentes al nodo.
+
+    //d) Agregue los nodos de la lista (uno por uno) al stack S.
+
+    //e) Libere la memoria usada por el nodo.
+
+  //Si terminó de recorre el grafo sin encontrar una solución, retorne NULL.
   
   return NULL;
 }
