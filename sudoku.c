@@ -129,11 +129,12 @@ int is_valid(Node* n){
   
       }
 
-    
-      
+      for(k = 0 ; k < 10 ; k++)
+      {
+        arraysNum[k] = 0;
+      }
     }
   }
-
     return 1;
 }
 
