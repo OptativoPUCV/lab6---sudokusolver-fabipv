@@ -393,3 +393,9 @@ sudoku.c:111:19: error: ‘p’ undeclared (first use in this function)
 sudoku.c:111:19: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 203b515
+Fri 05 May 2023 03:46:34 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+da85459
