@@ -223,7 +223,13 @@ Node* DFS(Node* initial, int* cont){
     
     //d) Agregue los nodos de la lista (uno por uno) al stack S.
     Node *actual = first(listaNodos);
-     while(actual != NULL)
+    while(actual != NULL)
+    {
+      push(s,actual);
+      actual = next(listaNodos);
+    }
+    
+    
        
     
     
