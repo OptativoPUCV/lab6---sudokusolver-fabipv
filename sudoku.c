@@ -48,7 +48,7 @@ int is_valid(Node* n){
   int j;
   int k;
 
-  int arraysNum[10] = {0};
+  int arraysNum[10] = {0,0,0,0,0,0,0,0,0,0};
   
   //No se repitan numeros en las filas
   for(i = 0; i < 9; i++)
