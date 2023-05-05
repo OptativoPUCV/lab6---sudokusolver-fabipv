@@ -100,7 +100,14 @@ int is_valid(Node* n){
   }
   
   //No se repitan en las submatrices de 3x3
-  
+
+  for(i = 1 ; i < 9 ; i+= 3)
+  {
+    for(j = 1 ; j < 9 ; j+= 3)
+    {
+      
+    }
+  }
 
     return 1;
 }
