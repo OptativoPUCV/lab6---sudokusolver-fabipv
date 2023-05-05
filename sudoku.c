@@ -229,6 +229,9 @@ Node* DFS(Node* initial, int* cont){
       actual = next(listaNodos);
     }
     
+    //e) Libere la memoria usada por el nodo.
+    free(encontrado);
+
     
        
     
@@ -241,7 +244,7 @@ Node* DFS(Node* initial, int* cont){
 
     
 
-    //e) Libere la memoria usada por el nodo.
+    
 
   //Si terminó de recorre el grafo sin encontrar una solución, retorne NULL.
   
