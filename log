@@ -515,3 +515,18 @@ sudoku.c:200:10: error: unused variable ‘pila’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0a37d9a
+Fri 05 May 2023 12:38:53 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:200:3: error: variable ‘pila’ has initializer but incomplete type
+  200 |   Stack pila = createStack();
+      |   ^~~~~
+sudoku.c:200:9: error: storage size of ‘pila’ isn’t known
+  200 |   Stack pila = createStack();
+      |         ^~~~
+sudoku.c:200:9: error: unused variable ‘pila’ [-Werror=unused-variable]
+cc1: all warnings being treated as errors
+Compilation failed
+0f8b629
