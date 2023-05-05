@@ -46,7 +46,7 @@ void print_node(Node* n){
 int is_valid(Node* n){
   int i;
   int j;
-  int k;
+  //int k;
 
   //int arraysNum[9] = {0};
   
