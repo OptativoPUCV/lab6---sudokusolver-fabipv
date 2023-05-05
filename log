@@ -155,3 +155,19 @@ sudoku.c:49:7: error: unused variable ‘k’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 3d6b897
+Fri 05 May 2023 01:42:23 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:66:11: error: ‘arraysNums’ undeclared (first use in this function); did you mean ‘arraysNum’?
+   66 |           arraysNums[n->sudo[i][j]] = 1;
+      |           ^~~~~~~~~~
+      |           arraysNum
+sudoku.c:66:11: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:49:7: error: unused variable ‘k’ [-Werror=unused-variable]
+   49 |   int k;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+a9f77da
