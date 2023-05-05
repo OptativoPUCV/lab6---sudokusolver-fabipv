@@ -201,7 +201,14 @@ Node* DFS(Node* initial, int* cont){
   Stack *s = createStack();
   push(s, initial);
 
+  cont = 0;
+
   //Mientras el stack S no se encuentre vacío:
+
+  /*while(s != NULL)
+  {
+    
+  }*/
 
     //a) Saque y elimine el primer nodo de S.
 
